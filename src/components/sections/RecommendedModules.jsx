@@ -1,11 +1,13 @@
 import React from "react";
-
+import jpg1 from "/pic/job.jpg";
+import jpg2 from "/pic/resume.jpg";
+import jpg3 from "/pic/skills.jpg";
 const modules = [
   {
     title: "Effective Job Search",
     description:
       "Ready to explore the world of work? This module teaches you the secrets to finding jobs that match your passions and strengths. Get step-by-step strategies to decode job postings, write standout applications, and build networking skills that connect you with people who can guide your career. Perfect for high school students starting to think about life after graduation—discover how to land a role that excites you!",
-    image: "/pic/job.jpg",
+    image: jpg1,
     category: "Module ",
     duration: "80-145 min",
   },
@@ -13,7 +15,7 @@ const modules = [
     title: "Resume Feedback",
     description:
       "Your resume is your ticket to opportunity! This module uses AI-powered tips to help you create a resume that shines, even if you’re just starting out. Learn how to showcase your school projects, extracurriculars, and part-time jobs in a way that grabs attention. Tailor it to your dream career path and get ready to impress colleges, internships, or future employers—perfect for high schoolers taking their first steps.",
-    image: "/pic/resume.jpg",
+    image: jpg2,
     category: "Module ",
     duration: "60-120 min",
   },
@@ -21,7 +23,7 @@ const modules = [
     title: "Skill Recommendations",
     description:
       "Wondering what skills will set you up for success? This module helps you figure out what you’re already good at and what you can learn to stand out in your future career. Explore in-demand skills for industries like tech, healthcare, or the arts, and build a custom plan to grow your talents. Ideal for high school students eager to get a head start on their dream job!" ,
-    image: "/pic/skills.jpg",
+    image: jpg3,
     category: "Module ",
     duration: "45-90 min",
   },
