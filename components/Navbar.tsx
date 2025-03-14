@@ -18,7 +18,7 @@ export default function Navbar() {
     <nav className="bg-white text-white p-2 shadow-md">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
-          <button onClick={toggleMenu} className="md:hidden p-2 rounded bg-orange-500 hover:bg-orange-600">
+          <button onClick={toggleMenu} className="md:hidden p-2 text-orange-500 hover:text-orange-700">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu">
               <path d="M3 12h18M3 6h18M3 18h18" />
             </svg>

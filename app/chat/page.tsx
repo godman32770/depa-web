@@ -62,11 +62,11 @@ export default function Chat() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Type your message..."
-          className="flex-1 mr-2 border-gray-300 focus:border-secondary transition-colors"
+          className="flex-1 mr-2 border-gray-300 focus:border-secondary transition-colors rounded-full"
         />
         <Button
           type="submit"
-          className="bg-orange-500 hover:bg-blue-700 text-white transition-colors"
+          className="bg-orange-500 hover:bg-blue-700 text-white transition-colors rounded-full"
         >
           Send
         </Button>
