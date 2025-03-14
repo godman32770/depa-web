@@ -1,7 +1,7 @@
 import React from "react";
 import ModuleCard from "../components/sections/ModuleCard";
 import SkillActivity from "./hub/SkillActivity"; // Import Skill Activity
-url = "https://media.istockphoto.com/id/1470714068/vector/soft-skills-or-personal-attribute-to-be-success-confident-businessman-with-elements-of-soft.jpg?s=612x612&w=0&k=20&c=CQc0A0zQpCIjuX2_nTWKvffJqEtc08KBTFH6aQ8JidI="
+const url = "https://media.istockphoto.com/id/1470714068/vector/soft-skills-or-personal-attribute-to-be-success-confident-businessman-with-elements-of-soft.jpg?s=612x612&w=0&k=20&c=CQc0A0zQpCIjuX2_nTWKvffJqEtc08KBTFH6aQ8JidI="
 
 
 const SkillRecommend = () => {

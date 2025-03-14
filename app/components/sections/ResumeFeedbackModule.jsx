@@ -1,6 +1,7 @@
 import React from "react";
 import ModuleCard from "./ModuleCard";
-url = "https://static.vecteezy.com/system/resources/previews/003/528/134/non_2x/resume-concept-woman-makes-resume-illustration-flat-vector.jpg"
+
+const url = "https://static.vecteezy.com/system/resources/previews/003/528/134/non_2x/resume-concept-woman-makes-resume-illustration-flat-vector.jpg";
 
 const ResumeFeedbackModule = () => {
   return (

@@ -14,9 +14,14 @@ const JobActivity = () => {
     { title: "Overcoming Job Search Challenges", description: "Tackle common job search obstacles and setbacks." }
   ];
 
-  const handleTopicClick = (title) => {
-    navigate(`/chat?topic=${encodeURIComponent(title)}`);
+  
+  /*const handleTopicClick = (title) => {
+    navigate(`/chat?topic=${encodeURIComponent(agent_learning_path)}`);
+  };*/
+  const handleTopicClick = () => {
+    navigate(`/chat/agent_learning_path/`);
   };
+
 
   return (
     <section className="py-16 bg-gray-100">

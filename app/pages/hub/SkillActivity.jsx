@@ -1,6 +1,7 @@
 import React from "react";
 
 const SkillActivity = () => {
+  const navigate = useNavigate();
   const topics = [
     { title: "Understanding Your Skills", description: "Recognize your core competencies and strengths." },
     { title: "Analyzing Transferable Skills", description: "Identify skills that can be applied across industries." },
@@ -12,11 +13,20 @@ const SkillActivity = () => {
     { title: "Building a Skill Development Plan", description: "Create a roadmap for continuous learning and growth." }
   ];
 
+
+  
+  const handleTopicClick = (title) => {
+    navigate(`/chat?topic=${encodeURIComponent(agent_feasibility_check)}`);
+  };
+
+
+
   return (
     <section id="testimonials" className=" py-16 bg-gray-100">
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
         {topics.map((topic, i) => (
           <div key={i} className="testimonial-box text-center">
+            onClick={() => handleTopicClick(topic.title)}
             <h4 className="mt-2 font-bold">{topic.title}</h4>
             <p className="text-gray-700">"{topic.description}"</p>
           </div>

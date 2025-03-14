@@ -14,10 +14,34 @@ export const registerUser = async (email: string, password: string) => {
   return response.data;
 };
 
-export const sendMessage = async (message: string) => {
+export const sendMessagefeasibility = async (message: string) => {
   const token = localStorage.getItem("token");
   const response = await api.post(
-    "/api/chat",
+    "/api/chat/agent_feasibility_check",
+    { message },
+    {
+      headers: { Authorization: `Bearer ${token}` },
+    }
+  );
+  return response.data;
+};
+
+export const sendMessagelearning = async (message: string) => {
+  const token = localStorage.getItem("token");
+  const response = await api.post(
+    "/api/chat/agent_learning_path",
+    { message },
+    {
+      headers: { Authorization: `Bearer ${token}` },
+    }
+  );
+  return response.data;
+};
+
+export const sendMessageRecommend = async (message: string) => {
+  const token = localStorage.getItem("token");
+  const response = await api.post(
+    "/api/chat/agent_recommendation",
     { message },
     {
       headers: { Authorization: `Bearer ${token}` },

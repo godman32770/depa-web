@@ -19,7 +19,7 @@ export default function Login() {
     e.preventDefault();
     try {
       await login(email, password);
-      router.push("/chat");
+      router.push("/");
     } catch (err) {
       setError("Invalid email or password");
     }

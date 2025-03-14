@@ -3,7 +3,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import JobActivity from "./hub/JobActivity.jsx";
-import Chat from "../chat/page.tsx";
 
 import HeroSection from "../components/sections/HeroSection.jsx";
 import Features from "../components/sections/Features.jsx";
@@ -15,8 +14,7 @@ import JobModule from "./JobModule.jsx";
 import ResumeModule from "./ResumeModule.jsx";
 import SkillRecommend from "./SkillRecommend.jsx";
 
-import coachlabicon from "./pic/image.png";
-
+import AgentLearningPath from "../chat/agent_learning_path/page.tsx";
 const Home = () => {
   return (
     <Router>
@@ -103,8 +101,7 @@ const Home = () => {
           <Route path="/resume-module" element={<ResumeModule />} />
           <Route path="/skill-recommend" element={<SkillRecommend />} />
           <Route path="/job-activity" element={<JobActivity />} />
-          <Route path="/chat" element={<Chat />} />
-          <Route path="/history" element={<History />} />
+          <Route path="/chat/agent_learning_path" element={<AgentLearningPath />} />
         </Routes>
       </div>
     </Router>

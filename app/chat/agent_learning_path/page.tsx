@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import ChatMessage from "@/components/ChatMessage";
-import { sendMessage } from "@/lib/api";
+import { sendMessagelearning } from "@/lib/api";
 
 type Message = {
   role: "user" | "assistant";
@@ -35,7 +35,7 @@ export default function Chat() {
     setInput("");
 
     try {
-      const response = await sendMessage(input);
+      const response = await sendMessagelearning(input);
       const aiMessage: Message = { role: "assistant", content: response.message };
       setMessages((prev) => [...prev, aiMessage]);
     } catch (err) {
